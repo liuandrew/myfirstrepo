@@ -1,0 +1,5 @@
+<div>
+    <h5>comment by <%= comment.author_name %></h5>
+    <p>Posted <%= distance_of_time_in_words(Time.now, comment.article.created_at) %> ago</p>
+    <p class="comment"><%= comment.body %></p>
+</div>
